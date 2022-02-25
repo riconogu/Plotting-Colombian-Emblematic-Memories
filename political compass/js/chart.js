@@ -1,18 +1,15 @@
 (function() {
   var canvas = document.getElementById('chart');
   var context = canvas.getContext('2d');
-  var textHeight = 0;
 
   function setup() {
     var height = canvas.height = canvas.parentNode.clientWidth; // use width for square aspect ratio
     var width = canvas.width = canvas.parentNode.clientWidth;
     var padding = 0;
     context.clearRect(0, 0, width, height);
-    context.font = '30px sans-serif';
-    textHeight = context.measureText('M').width;
-    drawGrid(width, height, 40, padding, '#B8860B', 1);
+    context.font = '20px sans-serif';
+    drawGrid(width, height, 40, padding, '#eee', 1);
     drawGrid(width, height, 2, padding, 'black', 2);
-    
     var labels = [
       { text: 'Memoria Trájica', horizontal: 'left', vertical: 'top', x: width/ 6, y: height/ 8 },
       { text: 'Responsabilidad del Estado en violaciones a los derechos humanos (+)', horizontal: 'center',vertical: 'top', x: width / 2, y: 0 },
@@ -23,10 +20,9 @@
       { text: 'Memoria indiferente', horizontal: 'left', vertical: 'bottom', x: width/ 6, y: height/ 1.2 },
       { text: 'Responsabilidad del Estado en violaciones a los derechos humanos (-)', horizontal: 'center', vertical: 'bottom', x: width / 2, y: height },
       { text: 'Memoria heróica', horizontal: 'right', vertical: 'bottom', x: width/ 1.2, y: height/ 1.2 },
-      
     ];
     labels.forEach(function(label) {
-      drawText(label, 10); //the label function is drawing the text towards the center of the Canvas
+      drawText(label, 10);
     });
   }
 
@@ -49,7 +45,7 @@
 
   function drawLine(start, end) {
     context.beginPath();
-    context.strokeStyle = '#FF1493';
+    context.strokeStyle = '#333';
     context.moveTo(start.x, start.y);
     context.lineTo(end.x, end.y);
     context.stroke();
@@ -100,7 +96,7 @@
     }
     context.translate(item.x, item.y);
     context.rotate(item.r * Math.PI / 180);
-    context.fillStyle = 'pink';
+    context.fillStyle = '#454545';
     context.fillText(item.text, 0, 0);
     context.restore();
   }

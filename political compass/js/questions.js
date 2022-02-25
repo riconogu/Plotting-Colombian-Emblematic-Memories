@@ -7,64 +7,26 @@
   var questions = [
     {
       flip: true,
-      title: 'La violencia es un producto exclusivo de la ausencia de una cultura de paz en el país',
-      type: 'exclusion',
+      title: 'People need welfare support to combat inequality',
+      type: 'economic',
     },
     {
-      flip: false,
-      title: 'La existencia de un sistema democrático cerrado explica la violencia en Colombia a través de su historia',
-      type: 'social'
+      flip: true,
+      title: 'Freedom of big business is worse for the economy',
+      type: 'economic'
     },
     {
       flip: true,
       title: 'Companies need regulating by the government',
-      type: 'exclusion'
-    },
-    {
-      flip: false,
-      title: 'Wages are always fair, as companies will match market rates',
-      type: 'exclusion'
+      type: 'economic'
     },
     {
       flip: true,
-      title: 'Government may spy on citizens to combat terrorism',
-      type: 'social'
+      title: 'Wages are not fair, as companies will match market rates',
+      type: 'economic'
     },
-    {
-      flip: false,
-      title: 'Government should be less involved in the day to day life of its citizens',
-      type: 'social'
-    },
-    {
-      flip: true,
-      title: 'Government must project strength to succeed',
-      type: 'social'
-    },
-    {
-      flip: false,
-      title: 'The smaller the government, the freer the people',
-      type: 'social'
-    },
-    {
-      flip: false,
-      title: 'The smaller the government, the freer the people',
-      type: 'social'
-    },
-    {
-      flip: false,
-      title: 'The smaller the government, the freer the people',
-      type: 'social'
-    },
-    {
-      flip: false,
-      title: 'The smaller the government, the freer the people',
-      type: 'social'
-    },
-    {
-      flip: false,
-      title: 'The smaller the government, the freer the people',
-      type: 'social'
-    },
+    
+      
   ];
   var questionNum = 1;
 
@@ -120,27 +82,34 @@
   }
 
   function updateChart() {
-    var matches = 0;
     var results = {
-      exclusion: 0,
-      social: 0,
+      economic: {
+        matches: 0,
+        score: 0
+      },
+      social: {
+        matches: 0,
+        score: 0
+      }
     };
-    questions.forEach(function(question, index) {
+    questions.forEach(function(question) {
       if (question.answer) {
         if (question.flip) {
-          results[question.type] = results[question.type] - question.answer;
+          results[question.type].score = results[question.type].score - question.answer;
         } else {
-          results[question.type] = results[question.type] + question.answer;
+          results[question.type].score = results[question.type].score + question.answer;
         }
-        if (matches > 0) {
-          results[question.type] = results[question.type] / 2;
-        }
-        matches += 1;
+        results[question.type].matches += 1;
       }
     });
+    var economic = results['economic'].score / (results['economic'].matches || 1);
+    var social = results['social'].score / (results['social'].matches || 1);
+    console.log('questions', questions);
     console.log('results', results);
-    dot.style.left = ((results['exclusion'] + 1) / 2) * 100 + '%';
-    dot.style.top = ((results['social'] + 1) / 2) * 100 + '%';
+    console.log('economic', economic);
+    console.log('social', social);
+    dot.style.left = ((economic + 1) / 2) * 100 + '%';
+    dot.style.top = ((social + 1) / 2) * 100 + '%';
   }
 
   setup();
