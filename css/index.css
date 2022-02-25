@@ -49,16 +49,6 @@
   }
 }
 
-.header-blue .navbar .navbar-collapse span .login {
-  color: #d9d9d9;
-  margin-right: .5rem;
-  text-decoration: none;
-}
-
-.header-blue .navbar .navbar-collapse span .login:hover {
-  color: #fff;
-}
-
 .header-blue .navbar .navbar-toggler {
   border-color: rgba(255,255,255,0.3);
 }
@@ -115,23 +105,6 @@
 
 .header-blue .navbar form label {
   color: #d9d9d9;
-}
-
-.header-blue .navbar form .search-field {
-  display: inline-block;
-  width: 80%;
-  background: none;
-  border: none;
-  border-bottom: 1px solid transparent;
-  border-radius: 0;
-  color: #ccc;
-  box-shadow: none;
-  color: inherit;
-  transition: border-bottom-color 0.3s;
-}
-
-.header-blue .navbar form .search-field:focus {
-  border-bottom: 1px solid #ccc;
 }
 
 .header-blue .hero {
