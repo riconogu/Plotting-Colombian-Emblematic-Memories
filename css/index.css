@@ -1,6 +1,6 @@
 /* general */
 .header-blue {
-  background: linear-gradient(135deg, #EAE7DC, #b6accd);
+  background: linear-gradient(135deg, #172a74, #21a9af);
   background-color: #184e8e;
   padding-bottom: 80px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -168,7 +168,7 @@ h5 {
 }
 
 h4 {
-  color: #333;
+  color: greenyellow;
   margin: 0 0 .5rem;
 }
 

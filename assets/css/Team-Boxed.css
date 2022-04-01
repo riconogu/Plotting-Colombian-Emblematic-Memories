@@ -1,10 +1,10 @@
 .team-boxed {
-  color: #313437;
-  background-color: #eef4f7;
+  color: white;
+  background: linear-gradient(135deg,  #21a9af,#172a74,);
 }
 
 .team-boxed p {
-  color: #7d8285;
+  color: white;
 }
 
 .team-boxed h2 {
@@ -43,7 +43,7 @@
 .team-boxed .item .box {
   text-align: center;
   padding: 30px;
-  background-color: #fff;
+  background-color: silver;
   margin-bottom: 30px;
 }
 
@@ -57,7 +57,7 @@
 .team-boxed .item .title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #d0d0d0;
+  color: #5e5e5e;
   letter-spacing: 2px;
   font-size: 13px;
 }
@@ -74,7 +74,7 @@
 
 .team-boxed .social {
   font-size: 18px;
-  color: #a2a8ae;
+  color: #5e5e5e;
 }
 
 .team-boxed .social a {

@@ -7,18 +7,18 @@
     var width = canvas.width = canvas.parentNode.clientWidth;
     var padding = 0;
     context.clearRect(0, 0, width, height);
-    context.font = '20px sans-serif';
-    drawGrid(width, height, 40, padding, '#eee', 1);
+    context.font = '30px sans-serif';
+    drawGrid(width, height, 40, padding, 'grey', 1);
     drawGrid(width, height, 2, padding, 'black', 2);
     var labels = [
       { text: 'Memoria Trájica', horizontal: 'left', vertical: 'top', x: width/ 6, y: height/ 8 },
-      { text: 'Responsabilidad del Estado en violaciones a los derechos humanos (+)', horizontal: 'center',vertical: 'top', x: width / 2, y: 0 },
+      { text: '', horizontal: 'center',vertical: 'top', x: width / 2, y: 0 },
       { text: 'Memoria insurgente', horizontal: 'right', vertical: 'top', x: width/ 1.2, y: height/ 8 },
-      { text: 'Rol de la exclusión en la generación del conflicto (-)', horizontal: 'left', vertical: 'middle', x: 0, y: height / 2 },
+      { text: '', horizontal: 'left', vertical: 'middle', x: 0, y: height / 2 },
       // { text: 'Centerism', horizontal: 'center', vertical: 'middle', x: width / 2, y: height / 2 },
-      { text: 'Rol de la exclusión en la generación del conflicto (+)', horizontal: 'right', vertical: 'middle', x: width, y: height / 2 },
+      { text: '', horizontal: 'right', vertical: 'middle', x: width, y: height / 2 },
       { text: 'Memoria indiferente', horizontal: 'left', vertical: 'bottom', x: width/ 6, y: height/ 1.2 },
-      { text: 'Responsabilidad del Estado en violaciones a los derechos humanos (-)', horizontal: 'center', vertical: 'bottom', x: width / 2, y: height },
+      { text: '', horizontal: 'center', vertical: 'bottom', x: width / 2, y: height },
       { text: 'Memoria heróica', horizontal: 'right', vertical: 'bottom', x: width/ 1.2, y: height/ 1.2 },
     ];
     labels.forEach(function(label) {

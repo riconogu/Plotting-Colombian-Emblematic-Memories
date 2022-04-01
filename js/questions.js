@@ -7,25 +7,69 @@
   var questions = [
     {
       flip: true,
-      title: 'People need welfare support to combat inequality',
-      type: 'economic',
+      title: 'La violencia es el producto exclusivo de la ausencia de una cultura de paz en Colombia',
+      type: 'exclusion',
+    },
+    {
+      flip: false,
+      title: 'Las violaciones de derechos humanos que cometió la fuerza pública fue el precio necesario para defender la democracia',
+      type: 'responsabilidad'
     },
     {
       flip: true,
-      title: 'Freedom of big business is worse for the economy',
-      type: 'economic'
+      title: 'Colombia siempre ha sido una democracia satisfactoria, incluso en los años del Frente Nacional, momento en el que nacieron múltiples movimientos guerrilleros',
+      type: 'exclusion'
+    },
+    {
+      flip: false,
+      title: 'La pobreza y la desigualdad han generado violencia en Colombia',
+      type: 'exclusion'
+    },
+    {
+      flip: false,
+      title: 'Las fuerzas armadas no violaron derechos humanos',
+      type: 'responsabilidad'
+    },
+    {
+      flip: false,
+      title: 'Las FARC y las fuerzas armadas no pueden equipararse porque mientras las FARC fueron un grupo terrorista, las fuerzas armadas defienden la constitución y a la ciudadanía',
+      type: 'responsabilidad'
     },
     {
       flip: true,
-      title: 'Companies need regulating by the government',
-      type: 'economic'
+      title: 'Las FARC, el ELN, y otros movimientos guerrilleros no son los únicos actores con responsabilidad en la violación de derechos humanos',
+      type: 'responsabilidad'
+    },
+    {
+      flip: false,
+      title: 'La exclusión política en Colombia ha cobrado y sigue cobrando vidas, como lo deja ver el asesinato de líderes sociales',
+      type: 'exclusion'
+    },
+    {
+      flip: false,
+      title: 'La intolerancia y la ausencia de valores democráticos presente en la sociedad colombiana no son la única forma de explicar la violencia en Colombia',
+      type: 'exclusion'
+    },
+    {
+      flip: false,
+      title: 'La población civil apoyando guerrilleros tiene que ser entendida como parte de los grupos guerrilleros que deben ser combatidos por las fuerzas armadas',
+      type: 'responsabilidad'
+    },
+    {
+      flip: false,
+      title: 'El desigual de acceso al uso y la propiedad de la tierra ha generado violencia en Colombia',
+      type: 'exclusion'
+    },
+    {
+      flip: false,
+      title: 'Instituciones como el ejército no violan derechos humanos. Solo las manzanas podridas lo hacen. ',
+      type: 'responsabilidad'
     },
     {
       flip: true,
-      title: 'Wages are not fair, as companies will match market rates',
-      type: 'economic'
+      title: 'Si la fe y la espiritualidad fuera más fuerte en las colombianas y colombianos, la violencia no habría tenido lugar',
+      type: 'exclusion'
     },
-    
       
   ];
   var questionNum = 1;
@@ -41,7 +85,7 @@
   function load(num) {
     console.log('questions.load', num);
     var question = questions[num - 1];
-    number.innerText = `Question ${num}`;
+    number.innerText = `Afirmación ${num}`;
     title.innerText = question.title;
     questionNum = num;
   }
@@ -83,11 +127,11 @@
 
   function updateChart() {
     var results = {
-      economic: {
+      exclusion: {
         matches: 0,
         score: 0
       },
-      social: {
+      responsabilidad: {
         matches: 0,
         score: 0
       }
@@ -102,14 +146,14 @@
         results[question.type].matches += 1;
       }
     });
-    var economic = results['economic'].score / (results['economic'].matches || 1);
-    var social = results['social'].score / (results['social'].matches || 1);
+    var exclusion = results['exclusion'].score / (results['exclusion'].matches || 1);
+    var responsabilidad = results['responsabilidad'].score / (results['responsabilidad'].matches || 1);
     console.log('questions', questions);
     console.log('results', results);
-    console.log('economic', economic);
-    console.log('social', social);
-    dot.style.left = ((economic + 1) / 2) * 100 + '%';
-    dot.style.top = ((social + 1) / 2) * 100 + '%';
+    console.log('exclusion', exclusion);
+    console.log('responsabilidad', responsabilidad);
+    dot.style.left = ((exclusion + 1) / 2) * 100 + '%';
+    dot.style.top = ((responsabilidad + 1) / 2) * 100 + '%';
   }
 
   setup();
