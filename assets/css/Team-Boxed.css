@@ -1,10 +1,10 @@
 .team-boxed {
-  color: white;
+  color: #2a3339;
   background: linear-gradient(135deg,  #21a9af,#172a74,);
 }
 
 .team-boxed p {
-  color: white;
+  color: #2a3339;
 }
 
 .team-boxed h2 {
@@ -43,7 +43,7 @@
 .team-boxed .item .box {
   text-align: center;
   padding: 30px;
-  background-color: silver;
+  background-color: #9f4a31;
   margin-bottom: 30px;
 }
 
@@ -57,7 +57,7 @@
 .team-boxed .item .title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #5e5e5e;
+  color: #dbcfb8;
   letter-spacing: 2px;
   font-size: 13px;
 }
@@ -74,7 +74,7 @@
 
 .team-boxed .social {
   font-size: 18px;
-  color: #5e5e5e;
+  color: #dbcfb8;
 }
 
 .team-boxed .social a {

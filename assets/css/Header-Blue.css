@@ -1,6 +1,6 @@
 .header-blue {
-  background: linear-gradient(135deg, #172a74, #21a9af);
-  background-color: #184e8e;
+  
+  background-color: #dbcfb8;
   padding-bottom: 80px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -98,9 +98,9 @@
 }
 
 .header-blue .action-button, .header-blue .action-button:not(.disabled):active {
-  border: 1px solid rgba(255,255,255,0.7);
+  border: 1px solid #9f4a31;
   border-radius: 40px;
-  color: #ebeff1;
+  color: #2a3339;
   box-shadow: none;
   text-shadow: none;
   padding: .3rem .8rem;
@@ -110,7 +110,7 @@
 }
 
 .header-blue .action-button:hover {
-  color: #fff;
+  color: #a59943;
 }
 
 .header-blue .navbar form label {
@@ -164,7 +164,7 @@
 }
 
 .header-blue .hero p {
-  color: rgba(255,255,255,0.8);
+  color: #525b3d;
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 300;
