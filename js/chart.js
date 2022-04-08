@@ -7,8 +7,8 @@
     var width = canvas.width = canvas.parentNode.clientWidth;
     var padding = 0;
     context.clearRect(0, 0, width, height);
-    context.font = '30px sans-serif';
-    drawGrid(width, height, 40, padding, 'grey', 1);
+    context.font = '18px sans-serif';
+    drawGrid(width, height, 40, padding, 'white', 1);
     drawGrid(width, height, 2, padding, 'black', 2);
     var labels = [
       { text: 'Memoria Trájica', horizontal: 'left', vertical: 'top', x: width/ 6, y: height/ 8 },
