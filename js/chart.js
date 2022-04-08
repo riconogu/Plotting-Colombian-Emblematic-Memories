@@ -11,7 +11,7 @@
     drawGrid(width, height, 40, padding, 'white', 1);
     drawGrid(width, height, 2, padding, 'black', 2);
     var labels = [
-      { text: 'Memoria Trájica', horizontal: 'left', vertical: 'top', x: width/ 8, y: height/ 10 },
+      { text: 'Memoria Trájica', horizontal: 'left', vertical: 'top', x: width/ 11, y: height/ 13 },
       { text: '', horizontal: 'center',vertical: 'top', x: width / 2, y: 0 },
       { text: 'Memoria insurgente', horizontal: 'right', vertical: 'top', x: width/ 1.18, y: height/ 10 },
       { text: '', horizontal: 'left', vertical: 'middle', x: 0, y: height / 2 },
