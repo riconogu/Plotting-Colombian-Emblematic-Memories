@@ -13,13 +13,13 @@
     var labels = [
       { text: 'Memoria Trájica', horizontal: 'left', vertical: 'top', x: width/ 11, y: height/ 13 },
       { text: '', horizontal: 'center',vertical: 'top', x: width / 2, y: 0 },
-      { text: 'Memoria insurgente', horizontal: 'right', vertical: 'top', x: width/ 1.18, y: height/ 10 },
+      { text: 'Memoria insurgente', horizontal: 'right', vertical: 'top', x: width/ 1.11, y: height/ 10 },
       { text: '', horizontal: 'left', vertical: 'middle', x: 0, y: height / 2 },
       // { text: 'Centerism', horizontal: 'center', vertical: 'middle', x: width / 2, y: height / 2 },
       { text: '', horizontal: 'right', vertical: 'middle', x: width, y: height / 2 },
-      { text: 'Memoria indiferente', horizontal: 'left', vertical: 'bottom', x: width/ 8, y: height/ 1.18 },
+      { text: 'Memoria indiferente', horizontal: 'left', vertical: 'bottom', x: width/ 11, y: height/ 1.11 },
       { text: '', horizontal: 'center', vertical: 'bottom', x: width / 2, y: height },
-      { text: 'Memoria heróica', horizontal: 'right', vertical: 'bottom', x: width/ 1.18, y: height/ 1.15 },
+      { text: 'Memoria heróica', horizontal: 'right', vertical: 'bottom', x: width/ 1.10, y: height/ 1.09 },
     ];
     labels.forEach(function(label) {
       drawText(label, 10);
