@@ -175,7 +175,7 @@
   }
   
   button {
-    background-color: black;
+    background-color: white;
     border: 0;
     border-radius: .5rem;
     box-shadow: 0px 2px 4px blue;
@@ -183,7 +183,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     margin: 0 .5rem .5rem 0;
-    max-width: 6rem;
+    max-width: 50%;
     padding: 1rem;
     transition: box-shadow .25s ease-out;
   }
@@ -254,9 +254,7 @@
   @media (min-width: 48rem) {
   
   
-  
-  
-    .content {
+   .content {
       display: flex;
       width: 100%;
     }
@@ -265,12 +263,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 50%;
+      width: 100%;
       background-color: #9f4a31;
     }
   
     .content .input .answers {
-      justify-content: flex-start;
+      display: flex;
+      flex-direction: column;
+	  align-items: center;
+      justify-content: center;
     }
     
     .content .output {
