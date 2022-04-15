@@ -105,6 +105,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="container hero">
+                    <div class="row align-items-start">
+                      <div class="col">
                         <div class="content">
                           <div class="input">
                             <div class="questions">
@@ -112,12 +114,17 @@
                               <h3 id="title"></h3>
                             </div>
                             <div class="answers" id="answers">
+
                               <button class="answer" data-num="-1">
-                                <img src="images\Totalmente en desacuerdo.png" alt="Disagree strongly" />
+                                Strongly Disgree
+                                <!--<img src="images\Totalmente en desacuerdo.png" alt="Disagree strongly" />-->
                               </button>
+                              <div class="break"></div>
+
                               <button class="answer" data-num="-0.5">
                                 <img src="images\En desacuerdo.png" alt="Disagree" />
                               </button>
+
                               <button class="answer" data-num="0.5">
                                 <img src="images\De acuerdo.png" alt="Agree" />
                               </button>
@@ -126,13 +133,19 @@
                               </button>
                             </div>
                           </div>
+                          </div>
+                      </div>
+                      <div class="col">
                           <div class="output">
                             <div class="dot" id="dot">
                               <img src="images/target.svg" alt="Target" />
                             </div>
                             <canvas class="chart" id="chart"></canvas>
                           </div>
+                          </div>
+                          </div>
                         </div>
+                      </div>
                       </div>
                 </div>
             </div>
