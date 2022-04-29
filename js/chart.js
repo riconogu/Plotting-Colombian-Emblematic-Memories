@@ -13,7 +13,7 @@
     var labels = [
       { text: 'Memoria Trájica', horizontal: 'left', vertical: 'top', x: width/ 11, y: height/ 13 },
       { text: '', horizontal: 'center',vertical: 'top', x: width / 2, y: 0 },
-      { text: 'Memoria insurgente', horizontal: 'right', vertical: 'top', x: width/ 1.11, y: height/ 10 },
+      { text: 'Memoria cruzada', horizontal: 'right', vertical: 'top', x: width/ 1.11, y: height/ 10 },
       { text: '', horizontal: 'left', vertical: 'middle', x: 0, y: height / 2 },
       // { text: 'Centerism', horizontal: 'center', vertical: 'middle', x: width / 2, y: height / 2 },
       { text: '', horizontal: 'right', vertical: 'middle', x: width, y: height / 2 },
