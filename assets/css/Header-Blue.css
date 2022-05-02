@@ -1,6 +1,6 @@
 .header-blue {
   
-  background-color: #a59943;
+  background-color: linear-gradient(-76deg, black 60%, whitesmoke 50%);
   padding-bottom: 80px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -110,7 +110,7 @@
 }
 
 .header-blue .action-button:hover {
-  color: #a59943;
+  color: #dbcfb8;
 }
 
 .header-blue .navbar form label {
@@ -189,11 +189,11 @@
 
 .header-blue .phone-mockup .screen {
   position: absolute;
-  width: 94%;
+  width: 96%;
   height: 98%;
   top: 1%;
   left: 3%;
-  border: 1px solid #444;
+  border: 20px solid #444;
   border-radius: 20px;
   background-color: #aaa;
   overflow: hidden;
