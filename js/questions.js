@@ -101,8 +101,8 @@
       window.location.hash = questionNum + 1;
     } else {
       answers.style.display = 'none';
-      number.innerText = `Complete!`;
-      title.innerText = 'All questions answered';
+      number.innerText = `Terminaste!`;
+      title.innerText = 'Toma un pantallazo de tu resultado y consulta el significado más abajo.';
     }
   }
 
