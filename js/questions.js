@@ -85,7 +85,7 @@
   function load(num) {
     console.log('questions.load', num);
     var question = questions[num - 1];
-    number.innerText = `Afirmación ${num}`;
+    number.innerText = `Afirmación ${num} de 15`;
     title.innerText = question.title;
     questionNum = num;
   }
